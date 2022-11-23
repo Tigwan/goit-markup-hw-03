@@ -1,0 +1,149 @@
+:root {
+  --color-text: #434455;
+  --color-primary-brand: #4D5AE5;
+  --color-dark: #2E2F42;
+  --color-white: #ffffff;
+  --color-light: #F4F4FD;
+  --color-accent: #E7E9FC;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+ul {
+list-style-type: none;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--color-text);
+}
+
+.link:active {
+  color: var(--color-primary-brand);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.iris {
+  color: var(--color-primary-brand);
+}
+
+.navy-blue {
+  color: var(--color-dark);
+}
+
+.contacts {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.hero {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.button {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-primary-brand);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-primary-brand);
+  color: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+.button-first {
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-white);
+  cursor: pointer;
+  
+}
+
+.button-service {
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.button-service:hover,
+.button-service:focus {
+  background-color: var(--color-primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+.button-service:active {
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+}
+
+.foot {
+  background-color: var(--color-dark);
+}
+
+.foot-logo {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-light);
+}
+
+.foot-text {
+  color: var(--color-accent);
+}
