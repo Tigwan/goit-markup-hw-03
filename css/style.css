@@ -9,8 +9,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -18,11 +16,11 @@ body {
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .link {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -42,11 +40,12 @@ list-style-type: none;
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .iris {
@@ -64,14 +63,35 @@ list-style-type: none;
 
 .hero {
   background-color: var(--color-dark);
+}
+
+.text-hero {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
   color: var(--color-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .button {
   background-color: var(--color-light);
   border: 1px solid var(--color-accent);
   border-radius: 4px;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -87,23 +107,12 @@ list-style-type: none;
   border-radius: 4px;
 }
 
-.button-first {
-  background-color: var(--color-primary-brand);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-  cursor: pointer;
-  
-}
-
 .button-service {
   background-color: var(--color-primary-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
   color: var(--color-white);
@@ -124,11 +133,22 @@ list-style-type: none;
 }
 
 .card-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-dark);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--color-dark);
+}
+
+.team {
+  background-color: var(--color-light);
 }
 
 .foot {
@@ -137,7 +157,7 @@ list-style-type: none;
 
 .foot-logo {
   font-family: 'Raleway';
-  font-weight: 800;
+  font-weight: 900;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
