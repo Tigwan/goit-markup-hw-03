@@ -1,3 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+/* *, *::before, *::after {
+  box-sizing: inherit;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 :root {
   --color-text: #434455;
   --color-primary-brand: #4D5AE5;
@@ -13,29 +31,66 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  margin: 0;
 }
 
-ul {
-  list-style-type: none;
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.link {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1128px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* HEADER */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.menu-nav {
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.menu-nav .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-nav .link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-dark);
   text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--color-text);
+.auth-nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: auto;
 }
 
-.link:active {
-  color: var(--color-primary-brand);
-}
+.auth-nav .item+.item {
+  margin-left: 40px;
+} 
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -46,6 +101,62 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 77px;
+  /* border: 1px solid teal; */
+  text-align: center;
+  padding-top: 24px;
+}
+
+/* ----------------------------------------------------- */
+ul {
+  list-style-type: none;
+}
+
+.feature-list {
+  display: flex;
+  /* flex-wrap: wrap; багатостроковий флекс */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width: 254px;
+}
+/* -------------------------------------------------- */
+.doing {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+  justify-content: space-between;
+}
+
+.grup {
+  padding-top: 120px;
+}
+
+.colleagues {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+
+.term {
+  padding-bottom: 120px;
+}
+/* -------------------------------------------- */
+.link:hover,
+.link:focus {
+  color: var(--color-text);
+}
+
+.link:active {
+  color: var(--color-primary-brand);
 }
 
 .iris {
@@ -57,12 +168,17 @@ ul {
 }
 
 .contacts {
+  display: flex;
   color: var(--color-text);
   text-decoration: none;
 }
 
+/* HERO */
 .hero {
   background-color: var(--color-dark);
+  text-align: center;
+  padding-top: 192px;
+  margin-bottom: 120px;
 }
 
 .text-hero {
@@ -71,6 +187,7 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  margin-bottom: 48px;
 }
 
 .visually-hidden {
@@ -117,6 +234,9 @@ ul {
   line-height: 1.2;
   color: var(--color-white);
   cursor: pointer;
+  padding: 16px 32px;
+  gap: 10px;
+  margin-bottom: 192px;
 }
 
 .button-service:hover,
@@ -138,13 +258,16 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-dark);
+  margin-bottom: 8px;
 }
 
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   color: var(--color-dark);
+  margin-bottom: 72px;
 }
 
 .team {
@@ -166,4 +289,23 @@ ul {
 
 .foot-text {
   color: var(--color-accent);
+  padding-top: 16px;
+}
+
+.logo-daun {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.coda {
+  width: 264px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
