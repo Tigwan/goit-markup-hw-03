@@ -2,9 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-/* *, *::before, *::after {
+ *, *::before, *::after {
   box-sizing: inherit;
-} */
+}
 
 h1,
 h2,
@@ -43,12 +43,17 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1128px;
-  padding-left: 12px;
-  padding-right: 12px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* HEADER */
+.page-header {
+  border-bottom: 2px solid #2E2F42;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -214,6 +219,7 @@ ul {
   letter-spacing: 0.04em;
   color: var(--color-primary-brand);
   cursor: pointer;
+  padding: 8px 16px;
 }
 
 .button:hover,
@@ -258,6 +264,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-dark);
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -308,4 +315,28 @@ ul {
   width: 264px;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.portfolio-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.control:not(:last-child) {
+  margin-right: 24px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 32px;
+  margin-bottom: 120px;
+  padding: 0;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
