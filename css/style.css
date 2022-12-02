@@ -34,6 +34,10 @@ body {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -50,7 +54,6 @@ body {
 
 /* HEADER */
 .page-header {
-  border-bottom: 1px solid var(--color-dark);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -119,10 +122,8 @@ ul {
 
 .feature-list {
   display: flex;
-  /* flex-wrap: wrap; багатостроковий флекс */
   margin: 0;
   padding: 0;
-  margin-bottom: 120px;
   justify-content: space-between;
 }
 
@@ -134,12 +135,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 120px;
   justify-content: space-between;
-}
-
-.grup {
-  padding-top: 120px;
 }
 
 .colleagues {
@@ -152,7 +148,7 @@ ul {
 }
 
 .term {
-  padding-bottom: 120px;
+  background-color: var(--color-white);
 }
 /* -------------------------------------------- */
 .link:hover,
@@ -183,16 +179,26 @@ ul {
   background-color: var(--color-dark);
   text-align: center;
   padding-top: 192px;
-  margin-bottom: 120px;
+  padding-bottom: 192px;
 }
 
 .text-hero {
+  max-width: 496px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 48px;
+}
+
+.advantages {
+  padding-top: 120px;
+}
+
+.services {
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -242,7 +248,6 @@ ul {
   cursor: pointer;
   padding: 16px 32px;
   gap: 10px;
-  margin-bottom: 192px;
 }
 
 .button-service:hover,
@@ -264,7 +269,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  margin-top: 32px;
+  margin-top: 0px;
   margin-bottom: 8px;
 }
 
@@ -279,10 +284,14 @@ ul {
 
 .team {
   background-color: var(--color-light);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .foot {
   background-color: var(--color-dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .foot-logo {
@@ -296,7 +305,7 @@ ul {
 
 .foot-text {
   color: var(--color-accent);
-  padding-top: 16px;
+  margin-top: 16px;
 }
 
 .logo-daun {
@@ -313,14 +322,17 @@ ul {
 
 .coda {
   width: 264px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+}
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .portfolio-link {
   display: flex;
   justify-content: center;
-  margin-top: 96px;
+  margin-top: 0;
   margin-bottom: 72px;
 }
 
@@ -333,10 +345,23 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 32px;
-  margin-bottom: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
 .gallery-item {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.gallery-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.gallery-card {
+  background-color: var(--color-white);
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
